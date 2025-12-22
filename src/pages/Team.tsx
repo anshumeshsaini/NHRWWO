@@ -160,13 +160,7 @@ const Team = () => {
       image: board8,
       email: "arjun.patel@nhrwwo.org",
     },
-    {
-      name: "Chandni Singh",
-      position: "National Vice President",
-      image: leader3,
-      bio: "Senior advocate specializing in human rights law. Successfully handled 500+ pro bono cases.",
-      email: "aisha@nhrwwo.org",
-    },
+   
   ];
 
   // Youth President Team
