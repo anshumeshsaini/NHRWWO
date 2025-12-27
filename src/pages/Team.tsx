@@ -18,6 +18,9 @@ import board5 from "../assets/teams/teamimg5.jpeg";
 import board6 from "../assets/teams/teamimg6.jpeg";
 import board7 from "../assets/teams/teamimg7.jpeg";
 import board8 from "../assets/teams/teamimg8.jpeg";
+import board9 from "../assets/teams/teamimg9.jpeg";
+import board10 from "../assets/teams/teamimg10.jpeg";
+import board11 from "../assets/teams/teamimg11.jpeg";
 
 // Import youth president images
 import youth1 from "../assets/teams/teamimg1.jpeg";
@@ -50,7 +53,7 @@ import member21 from "../assets/member/member21.jpeg";
 import member22 from "../assets/member/member22.jpeg";
 import member23 from "../assets/member/member23.jpeg";
 import member188 from "../assets/member/member188.jpeg";
-
+import statecore1 from "../assets/statecore/statecore1.jpeg";
 // import youth image
 
 import youth5 from '../assets/member/youth/youth1.jpeg'
@@ -72,18 +75,15 @@ import youth20 from '../assets/member/youth/youth16.jpeg'
 import youth21 from '../assets/member/youth/youth17.jpeg'
 import youth22 from '../assets/member/youth/youth18.jpeg'
 import youth23 from '../assets/member/youth/youth19.jpeg'
-import youth24 from '../assets/member/youth/youth20.jpeg'
-import youth25 from '../assets/member/youth/youth22.jpeg'
-import youth26 from '../assets/member/youth/youth23.jpeg'
-import youth27 from '../assets/member/youth/youth24.jpeg'
-import youth28 from '../assets/member/youth/youth25.jpeg'
-import youth29 from '../assets/member/youth/youth26.jpeg'
-import youth30 from '../assets/member/youth/youth27.jpeg'
-import youth31 from '../assets/member/youth/youth28.jpeg'
-import youth32 from '../assets/member/youth/youth29.jpeg'
-
-
-
+import youth24 from "../assets/member/youth/youth20.jpeg";
+import youth25 from "../assets/member/youth/youth22.jpeg";
+import youth26 from "../assets/member/youth/youth23.jpeg";
+import youth27 from "../assets/member/youth/youth24.jpeg";
+import youth28 from "../assets/member/youth/youth25.jpeg";
+import youth29 from "../assets/member/youth/youth26.jpeg";
+import youth30 from "../assets/member/youth/youth27.jpeg";
+import youth31 from "../assets/member/youth/youth28.jpeg";
+import youth32 from "../assets/member/youth/youth29.jpeg";
 
 const Team = () => {
   const leadership = [
@@ -160,7 +160,40 @@ const Team = () => {
       image: board8,
       email: "arjun.patel@nhrwwo.org",
     },
-   
+    { 
+      name: "Ghanshyam Sah", 
+      position: "National Vice President", 
+      expertise: "Legal & Compliance",
+      image: board9,
+      email: "arjun.patel@nhrwwo.org",
+    },
+    { 
+      name: "Renu Dhari", 
+      position: "National Convenor", 
+      expertise: "Legal & Compliance",
+      image: board10,
+      email: "arjun.patel@nhrwwo.org",
+    },
+    { 
+      name: "Alka Priya", 
+      position: "National Legal Advisor", 
+      expertise: "Legal & Compliance",
+      image: board11,
+      email: "arjun.patel@nhrwwo.org",
+    },
+  ];
+
+  // State Core Committee
+  const stateCommittee = [
+    {
+      name: "Pankaj Pathak",
+      position: "Vice President",
+      state: "Bihar Jharkhand",
+      expertise: "Vice President",
+      image: statecore1,
+      email: "anjali.sharma@nhrwwo.org",
+    },
+    
   ];
 
   // Youth President Team
@@ -227,10 +260,6 @@ const Team = () => {
       alt: "Team collaboration meeting",
     },
     {
-      url: member3,
-      alt: "Team collaboration meeting",
-    },
-    {
       url: member4,
       alt: "Team collaboration meeting",
     },
@@ -238,7 +267,6 @@ const Team = () => {
       url: member5,
       alt: "Team collaboration meeting",
     },
-
     {
       url: member6,
       alt: "Team collaboration meeting",
@@ -262,7 +290,8 @@ const Team = () => {
     {
       url: member11,
       alt: "Team collaboration meeting",
-    },{
+    },
+    {
       url: member12,
       alt: "Team collaboration meeting",
     },
@@ -278,7 +307,6 @@ const Team = () => {
       url: member15,
       alt: "Team collaboration meeting",
     },
-
     {
       url: member16,
       alt: "Team collaboration meeting",
@@ -287,8 +315,6 @@ const Team = () => {
       url: member17,
       alt: "Team collaboration meeting",
     },
-   
-   
   ];
 
   // Youth President Slider Images - 740x726 ratio
@@ -409,8 +435,6 @@ const Team = () => {
       url: youth32,
       alt: "Youth leadership conference",
     },
-   
-   
   ];
 
   const [currentMemberSlide, setCurrentMemberSlide] = useState(0);
@@ -486,7 +510,6 @@ const Team = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6">
                     <div className="flex gap-3">
                      
-
                     </div>
                   </div>
                 </div>
@@ -524,13 +547,56 @@ const Team = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4">
                     <div className="flex gap-2">
-                    
+                     
                     </div>
                   </div>
                 </div>
                 <CardContent className="p-6">
                   <h3 className="font-semibold text-foreground mb-2 text-lg">{member.name}</h3>
                   <p className="text-primary font-medium mb-2 text-sm">{member.position}</p>
+                  <p className="text-muted-foreground text-sm">{member.expertise}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* State Core Committee */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center text-foreground mb-4">State Core Committee</h2>
+          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+            Dedicated leaders driving our mission at the state level with regional expertise and local impact.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {stateCommittee.map((member, index) => (
+              <Card
+                key={index}
+                className="group hover:shadow-xl transition-all duration-300 animate-scale-in overflow-hidden"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <div className="relative aspect-[740/726] overflow-hidden">
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4">
+                    <div className="flex gap-2">
+
+                    </div>
+                  </div>
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="font-semibold text-foreground mb-2 text-lg">{member.name}</h3>
+                  <p className="text-primary font-medium mb-2 text-sm">{member.position}</p>
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-xs font-medium px-2 py-1 bg-primary/10 text-primary rounded-full">
+                      {member.state}
+                    </span>
+                  </div>
                   <p className="text-muted-foreground text-sm">{member.expertise}</p>
                 </CardContent>
               </Card>
